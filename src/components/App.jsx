@@ -9,7 +9,7 @@ export default function App() {
   const [id, setId] = useLocalStorage("id");
   const dashboard = (
     <ContactsProvider>
-      <ConversationsProvider>
+      <ConversationsProvider id={id}>
         <Dashboard logout={setId} id={id} />
       </ConversationsProvider>
     </ContactsProvider>

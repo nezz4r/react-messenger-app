@@ -39,7 +39,7 @@ export default function Sidebar({ id, logout }) {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-        <Tab.Content className="border-right overflow-auto flex-grow-1">
+        <Tab.Content className="border-right border-left overflow-auto flex-grow-1">
           <Tab.Pane eventKey={CONVERSATIONS_KEY}>
             <Conversations />
           </Tab.Pane>
@@ -48,7 +48,7 @@ export default function Sidebar({ id, logout }) {
             <Contacts />
           </Tab.Pane>
         </Tab.Content>
-        <div className="p-2 border-top border-right">
+        <div className="p-2 border-top border-right border-left">
           Your ID: <span className="text-muted">{id}</span>
         </div>
         <Button
